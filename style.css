@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body-home{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.2)), url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin-top: 0px;
+    height: 100%;
+    z-index: -10;
+    min-height: 100%;
+}
+/**/
+
+
+.header{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.2)), url(images/background-stromtrooper.png);
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+    border-radius: 10%;
+}
+#logo-image{
+    width: 150px;
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: -50px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+/* changing the link text into a button format  */
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+/* this will change the colour of the button when you hover over*/
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;  /*hiding the menu icons, on both screens. Will show on small screens with code below*/
+}
+/* changing the format so that it works on a smaller screen*/
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    /* below creates a tab that shows on a smaller screen but not on a bigger screen*/
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        border-radius: 2px;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -300px; /*this line means that it is not shown on the screen at first*/
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{    /*showing menu icons on smaller screen*/
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 700px) {    /*this allows the row to turn into columns for the different tags on a smaller screen*/
+    .row{
+        flex-direction: column;
+        
+    }
+}
+.clone-wars{
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+
+}
+
+/*positioning the clone wars images and designing them when you hover with a mouse*/
+.clone-wars-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+
+}
+.clone-wars-text{
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    border-radius: 10px;
+    cursor: default;
+   
+}
+.clone-wars-text:hover{
+    background-image: linear-gradient(rgba(43, 19, 19, 0.5),rgba(29, 13, 13, 0.5)), url(images/cl-img.jpg);
+
+}
+
+.clone-wars-col img{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+.clone-wars-col h3{
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+.layer-anakin{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.layer-anakin:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer-ahsoka{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.layer-ahsoka:hover{
+    background: rgba(47, 249, 36, 0.7);
+}
+.layer-obiwan{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.layer-obiwan:hover{
+    background: rgba(46, 103, 248, 0.7);
+}
+.clone-wars-col h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.clone-wars-col:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+
+/*Anakin page*/
+.body-character{
+    background-image: linear-gradient(rgba(18, 19, 24, 0.7), rgba(19, 20, 24, 0.7)), url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 0px;
+}
+
+
+.sub-header-anakin {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(images/anakin-real.jpg);
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+    border-radius: 10%;
+}
+.sub-header-anakin h1{  
+    margin-top:  0px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    transition: 1.5s;
+    cursor: default;
+    font-weight: 300;
+}
+.sub-header-anakin h1:hover{
+    color: red;
+}
+
+.character-bio{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.character-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.character-col img{
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    margin: auto;
+}
+.character-col h1{
+    padding-top: 0;
+    color: white;
+    text-align: center;
+}
+.character-col p{
+    padding: 15px 0 25px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+
+.sub-header-ahsoka {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(images/ahsoka.real.jpg);
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10%;
+}
+.sub-header-ahsoka h1{  
+    margin-top:  0px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    transition: 1.5s;
+    cursor: default;
+    font-weight: 800;
+}
+.sub-header-ahsoka h1:hover{
+    color: rgba(47, 249, 36, 0.7);
+}
+
+
+
+.sub-header-kenobi {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(images/kenobi-real.jpg);
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+    border-radius: 10%;
+}
+.sub-header-kenobi h1{  
+    margin-top:  0px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    transition: 1.5s;
+    cursor: default;
+    font-weight: 400;
+}
+.sub-header-kenobi h1:hover{
+    color: rgba(46, 103, 248, 0.7);
+}
+
+.fan-art {
+    margin-top: 80px;
+    margin-bottom: 200px;
+
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5%;
+
+}
+
+.fan-art h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   padding-top: 50px;
+   font-size: 62px;
+   color: #fff;
+}
+
+
+
+
+/*slider*/
+.slider-body{
+    max-height: 30vh;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+
+  }
+  .wrapper{
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    border-radius: 5px;
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
+
+  .theory{
+    
+    background-image:linear-gradient(rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)), url(images/Star-Destroyer.webp);
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    
+}
+.theory-title{
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+.theory-col{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+}
+.theory-col h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer{
+    display: flex;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40px;
+    
+}
+.footer h3{
+    margin: 20px;
+    color: #fff;
+    font-weight: 100;
+}
+

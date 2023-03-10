@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anakin Skywalker Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet"> <!--importing text from google-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--adding the link to icons(open and close menu)-->
+</head>
+<body>
+  <div class="body-character">
+  
+    <section class="sub-header-anakin">
+        <nav>
+          <a href="index.html"><img id="logo-image" src="images/starwars-logo.png" alt="starwars logo"></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                   <li><a href="index.html">Home</a></li>
+                  <li><a href="#clone-wars">Bios</a></li>
+                  <li><a href="#fan-art">Fan Art</a></li>
+                  <li><a href="#theory">Theories</a></li>
+                  <li><a href="#footer">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>    
+       <h1>Anakin Skywalker</h1>
+    </section>
+
+    <section class="character-bio">
+      <div class="row">
+        <div class="character-col">
+          <h1>The best character arc of all time</h1>
+          <p>
+Anakin Skywalker is one of the most complex and tragic characters in the Star Wars universe. He was born on the desert planet of Tatooine to a slave mother named Shmi Skywalker. His early life was marked by hardship and poverty, and he was forced to work as a mechanic to help support his family.
+As a young boy, Anakin displayed an incredible talent for mechanics and an innate connection to the Force. He was discovered by Jedi Master Qui-Gon Jinn, who recognized his potential and took him under his wing. After Qui-Gon's death, Anakin was trained as a Jedi Padawan by Obi-Wan Kenobi.
+Despite his extraordinary gifts, Anakin was plagued by feelings of insecurity and anger. He was haunted by the memory of his mother, who he was forced to leave behind on Tatooine, and he struggled to control his emotions. Anakin's impulsive nature and desire for power often put him at odds with the Jedi Code, which emphasizes detachment and self-control.
+Over the course of the Clone Wars, Anakin became one of the Republic's most skilled and respected warriors. He fought in numerous battles and led many successful missions, earning the nickname "the Hero Without Fear." Anakin's skill as a pilot and his natural charisma made him a popular figure among the clone troopers and the people of the Republic.
+However, Anakin's personal life was marked by tragedy and conflict. He fell in love with Padmé Amidala, a senator from his home planet of Naboo, and the two began a secret relationship. Anakin's love for Padmé became his greatest weakness, and he was willing to do anything to protect her, even if it meant betraying his duties as a Jedi.
+Anakin's descent into darkness was fueled by his fear of loss and his sense of isolation. He believed that the Jedi Order and the Republic had failed him, and he was convinced that only he had the power to save those he loved. Anakin's growing anger and thirst for power eventually led him to turn to the dark side of the Force and become Darth Vader, one of the most feared and powerful figures in the galaxy.
+As Darth Vader, Anakin became a ruthless enforcer of the Emperor's will. He was responsible for countless atrocities, including the destruction of the Jedi Order and the extermination of entire planets. Despite his immense power and influence, however, Anakin remained tormented by his past and his shattered dreams. He was haunted by the memory of his former life as a Jedi, and he remained deeply conflicted about his loyalty to the Emperor.
+In the end, Anakin's love for his son Luke Skywalker led him to rediscover his humanity and reject the dark side of the Force. He sacrificed his life to save his son and bring balance to the Force, redeeming himself in the eyes of the galaxy and fulfilling the prophecy of the Chosen One.
+Anakin Skywalker is a complex and multi-dimensional character whose journey represents the struggle between light and dark, good and evil, and the power of redemption. He is a tragic figure whose story continues to captivate and inspire fans around the world.</p>
+        </div>
+        <div class="character-col">
+          <img src="images/anakin-img.jpg" alt="anakin">
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+    
+     
+
+  
+
+
+
+
+
+
+    <script> // javascript to open and close menu using the onclick event defined in the fa line
+        let navLinks = document.getElementById('navLinks');
+        function showMenu(){
+          navLinks.style.right = '0';
+        }
+        function hideMenu(){
+          navLinks.style.right = '-200px';
+        }
+  
+  
+      </script>
+   </div>
+</body>
+</html>

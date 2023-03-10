@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahsoka Tano Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet"> <!--importing text from google-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--adding the link to icons(open and close menu)-->
+</head>
+<body>
+  <div class="body-character">
+  
+    <section class="sub-header-ahsoka">
+        <nav>
+          <a href="index.html"><img id="logo-image" src="images/starwars-logo.png" alt="starwars logo"></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Mando</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>    
+       <h1>Ahsoka Tano</h1>
+    </section>
+
+    <section class="character-bio">
+      <div class="row">
+        <div class="character-col">
+          <h1>A huge character development</h1>
+          <p>Ahsoka Tano is a prominent character in the Star Wars universe, particularly in the Clone Wars animated series. She is a Togruta, a humanoid species known for their distinctive head-tails, and is known for her bravery, skill, and determination.
+Ahsoka was born on the planet Shili and was brought to the Jedi Temple on Coruscant as a young child. She was trained as a Jedi Padawan under the tutelage of Anakin Skywalker, whom she developed a close bond with over the course of the Clone Wars.
+Despite her youth, Ahsoka quickly proved herself to be a skilled warrior and leader. She was often sent on dangerous missions and played a key role in many battles throughout the war. Ahsoka was also known for her ingenuity and creativity, often finding unconventional solutions to difficult problems.
+Over the course of the Clone Wars, Ahsoka's loyalty to the Jedi was tested numerous times. She witnessed the corruption and bureaucracy of the Republic firsthand, and often struggled with the ethical dilemmas posed by her role as a warrior. Despite this, Ahsoka remained steadfast in her commitment to the Jedi Code and the protection of the innocent.
+However, Ahsoka's loyalty was ultimately tested to the breaking point when she was falsely accused of a crime and expelled from the Jedi Order. This betrayal left Ahsoka disillusioned with the Jedi and struggling to find her place in the galaxy.
+Ahsoka eventually found a new purpose as a member of the Rebel Alliance. She became a mentor and ally to the young rebel leader, Ezra Bridger, and played a pivotal role in the fight against the Empire. Ahsoka's experiences throughout her life taught her the importance of trust, empathy, and courage in the face of adversity.
+Throughout her journey, Ahsoka remained true to her core values and beliefs, even in the face of overwhelming opposition. She is known for her fierce determination, unshakable moral compass, and unwavering commitment to justice. Ahsoka Tano is an inspiration to many, both in the Star Wars universe and in the real world.</p>
+        </div>
+        <div class="character-col">
+          <img src="images/ahsoka-img.jpg" alt="Ahsoka">
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+    
+     
+
+  
+
+
+
+
+
+
+    <script> // javascript to open and close menu using the onclick event defined in the fa line
+        let navLinks = document.getElementById('navLinks');
+        function showMenu(){
+          navLinks.style.right = '0';
+        }
+        function hideMenu(){
+          navLinks.style.right = '-200px';
+        }
+  
+  
+      </script>
+   </div>
+</body>
+</html>

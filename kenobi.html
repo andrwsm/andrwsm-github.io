@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obi-Wan Kenobi Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet"> <!--importing text from google-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--adding the link to icons(open and close menu)-->
+</head>
+<body>
+  <div class="body-character">
+  
+    <section class="sub-header-kenobi">
+        <nav>
+          <a href="index.html"><img id="logo-image" src="images/starwars-logo.png" alt="starwars logo"></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#clone-wars">Bios</a></li>
+                <li><a href="#fan-art">Fan Art</a></li>
+                <li><a href="#theory">Theories</a></li>
+                <li><a href="#footer">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>    
+       <h1>Obi-Wan Kenobi</h1>
+    </section>
+
+    <section class="character-bio">
+      <div class="row">
+        <div class="character-col">
+          <h1>A true Jedi</h1>
+          <p>Obi-Wan Kenobi is a legendary Jedi Master and one of the most beloved characters in the Star Wars universe. He was born on the planet Stewjon and was trained as a Jedi Knight by Qui-Gon Jinn, who he eventually succeeded as a Padawan learner.
+Obi-Wan was known for his wisdom, compassion, and dedication to the Jedi Order. He was also a skilled fighter and a gifted diplomat, making him an invaluable asset to the Republic during the Clone Wars.
+Throughout his career as a Jedi, Obi-Wan faced many challenges and hardships. He witnessed the fall of the Republic and the rise of the Empire, and was forced to confront the dark side of the Force on numerous occasions. Despite this, Obi-Wan remained steadfast in his commitment to the Jedi Code and the protection of the innocent.
+One of Obi-Wan's most defining moments came when he was tasked with training a young Anakin Skywalker. Although their relationship was at times tumultuous, Obi-Wan remained a steadfast mentor and friend to Anakin throughout his journey to becoming a Jedi Knight.
+Obi-Wan's loyalty to the Jedi Order was ultimately tested when he was forced to confront his former apprentice, who had fallen to the dark side and become Darth Vader. This confrontation resulted in one of the most iconic scenes in cinematic history, and ultimately led to Obi-Wan's self-imposed exile on the planet Tatooine.
+During his years in exile, Obi-Wan continued to watch over Luke Skywalker, the son of his former friend and apprentice. He played a crucial role in Luke's journey to becoming a Jedi Knight, and sacrificed his life to ensure Luke's survival and the defeat of the Empire.
+Throughout his life, Obi-Wan embodied the ideals of the Jedi Order. He was a symbol of hope, courage, and selflessness, and his legacy continues to inspire generations of fans around the world.</p>
+        </div>
+        <div class="character-col">
+          <img src="images/kenobi-img.jpg" alt="Obi-Wan Kenobi">
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+    
+     
+
+  
+
+
+
+
+
+
+    <script> // javascript to open and close menu using the onclick event defined in the fa line
+        let navLinks = document.getElementById('navLinks');
+        function showMenu(){
+          navLinks.style.right = '0';
+        }
+        function hideMenu(){
+          navLinks.style.right = '-200px';
+        }
+  
+  
+      </script>
+   </div>
+</body>
+</html>
